@@ -1,0 +1,229 @@
+﻿<Page x:Class="AirlinePlanChanges_MailCenter.View.BookingSearchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="612" d:DesignWidth="630"
+      Title="BookingSearchPage">
+
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+			<RowDefinition Height="38"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3"/>
+			<ColumnDefinition Width="110"/>
+			<ColumnDefinition Width="200"/>
+			<ColumnDefinition Width="4"/>
+			<ColumnDefinition Width="110"/>
+			<ColumnDefinition Width="200"/>
+			<ColumnDefinition Width="3"/>
+		</Grid.ColumnDefinitions>
+		<Label Content="Referenznummer:" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Status:" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Agency:" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Gds:" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Passenger(s):" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="10" >
+			<Label.Content>
+				<TextBlock TextWrapping="WrapWithOverflow">
+					Amount of<LineBreak/>passengers:
+				</TextBlock>
+			</Label.Content>
+		</Label>
+		<Label Content="Vendor:" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Ticket number:" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="10">
+			<Label.Content>
+				<TextBlock TextWrapping="WrapWithOverflow">
+					Booking GDS<LineBreak/>number:
+				</TextBlock>
+			</Label.Content>
+		</Label>
+		<Label Grid.Column="1" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="10" >
+			<Label.Content>
+				<TextBlock TextWrapping="WrapWithOverflow">
+					Booking GDS<LineBreak/>alias:
+				</TextBlock>
+			</Label.Content>
+		</Label>
+		<Label Content="Booking Date:" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Route:" Grid.Column="1" Grid.Row="11" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Grid.Column="1" Grid.Row="12" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="10" >
+			<Label.Content>
+				<TextBlock TextWrapping="WrapWithOverflow">
+					Number of<LineBreak/>segments:
+				</TextBlock>
+			</Label.Content>
+		</Label>
+		<Label Content="Clearing type:" Grid.Column="1" Grid.Row="13" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Excange ratio:" Grid.Column="1" Grid.Row="14" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Booking class:" Grid.Column="1" Grid.Row="15" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Fare basis:" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Customer:" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Payment method:" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Card type:" Grid.Column="4" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Card holder:" Grid.Column="4" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Selling currency:" Grid.Column="4" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Tariff:" Grid.Column="4" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Tax:" Grid.Column="4" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Full SC Flex:" Grid.Column="4" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="BLO part SC Flex:" Grid.Column="4" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Grid.Column="4" Grid.Row="10" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="10" >
+			<Label.Content>
+				<TextBlock TextWrapping="WrapWithOverflow">
+					Partner part<LineBreak/>SC Flex:
+				</TextBlock>
+			</Label.Content>
+		</Label>
+		<Label Content="BLO Fix SC:" Grid.Column="4" Grid.Row="11" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Partner Fix SC:" Grid.Column="4" Grid.Row="12" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Total Price:" Grid.Column="4" Grid.Row="13" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Commission:" Grid.Column="4" Grid.Row="14" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<Label Content="Commission base:" Grid.Column="4" Grid.Row="15" HorizontalAlignment="Left" VerticalAlignment="Center" 
+			   Width="110" Height="35" VerticalContentAlignment="Center" FontSize="12" />
+		<TextBox Grid.Column="2" Grid.Row="0" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="RereferenznummerTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="StatusTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="AgencyTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="3" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="GdsTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="4" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="PassengersTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="5" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="PassenegersAmountTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="VendorTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="7" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="TicketNumberTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="8" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="BookingGdsNumberTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="9" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="BookingGdsAliasTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="10" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="BookingDateTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="11" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="RouteTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="12" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="NumberOfSegmentsTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="13" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="ClearingTypeTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="14" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="ExchangeRatioTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="2" Grid.Row="15" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="BookingClassTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="0" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="FareBasisTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="CustomerTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="2" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="PaymentMethodTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="3" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="CardTypeTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="4" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="CardHolderTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="5" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="SellingCurrencyTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="6" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="TariffTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="7" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="TaxTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="8" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="FullScFlexTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="9" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="BloPartScFlexTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="10" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="PartnerPartScFlexTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="11" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="BloFixScTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="12" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="PartnerFixScTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="13" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="TotalPriceTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="14" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="CommissionTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+		<TextBox Grid.Column="5" Grid.Row="15" HorizontalAlignment="Left" Height="35" 
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"
+				 x:Name="CommissionBaseTextBox" FontSize="10" FontWeight="Bold" TextAlignment="Left"/>
+	</Grid>
+</Page>

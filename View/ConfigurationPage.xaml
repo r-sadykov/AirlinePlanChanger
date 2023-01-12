@@ -1,0 +1,241 @@
+﻿<Page x:Class="AirlinePlanChanges_MailCenter.View.ConfigurationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="812" d:DesignWidth="1374"
+      Title="ConfigurationPage">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="100"/>
+			<RowDefinition Height="712"/>
+		</Grid.RowDefinitions>
+
+		<StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="1374" Grid.Row="0">
+			<Grid Height="100">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="100" />
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="50"/>
+					<ColumnDefinition Width="1024*"/>
+				</Grid.ColumnDefinitions>
+				<Button VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Width="70" Height="70" Margin="10,12,10,13" Click="Back_Button_Click" Background="Transparent" BorderThickness="0">
+					<StackPanel>
+						<Image>
+							<Image.Source>
+								<BitmapImage UriSource="..\AppData\Images\BackArrowImage.png"/>
+							</Image.Source>
+						</Image>
+					</StackPanel>
+				</Button>
+				<Button Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" Height="70" Margin="10,12,10,13" Background="Transparent" BorderThickness="0" Click="Save_Button_Click">
+					<StackPanel>
+						<Image>
+							<Image.Source>
+								<BitmapImage UriSource="..\AppData\Images\SaveImage.png"/>
+							</Image.Source>
+						</Image>
+					</StackPanel>
+				</Button>
+				<Button Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" Height="70" Margin="10,12,10,13" Background="Transparent" BorderThickness="0" Click="Edit_Button_Click">
+					<StackPanel>
+						<Image>
+							<Image.Source>
+								<BitmapImage UriSource="..\AppData\Images\EditImage.png"/>
+							</Image.Source>
+						</Image>
+					</StackPanel>
+				</Button>
+				<Label Content="CONFIGURATION Page" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="814" Height="100" FontSize="36" FontWeight="Bold" VerticalContentAlignment="Center"/>
+			</Grid>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="712" VerticalAlignment="Top" Width="1374" Grid.Row="1">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="200"/>
+					<ColumnDefinition Width="20"/>
+					<ColumnDefinition Width="50"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="50"/>
+					<ColumnDefinition Width="50"/>
+					<ColumnDefinition Width="200" />
+					<ColumnDefinition Width="20"/>
+					<ColumnDefinition Width="50"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="50"/>
+					<ColumnDefinition Width="50*"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+				</Grid.RowDefinitions>
+
+				<Label Content="EMail configuration" HorizontalAlignment="Left" Height="50" VerticalAlignment="Center" Width="620" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="EMail User Name:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="1" FontSize="14" VerticalContentAlignment="Center"/>
+				<Label Content="EMail Address:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="2" FontSize="14" VerticalContentAlignment="Center"/>
+				<Label Content="EMail Password:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="3" FontSize="14" VerticalContentAlignment="Center"/>
+				<Label HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="4" FontSize="14" VerticalContentAlignment="Center">
+					<TextBlock TextWrapping="WrapWithOverflow">
+                        Server name of Income messages:
+					</TextBlock>
+				</Label>
+				<Label Content="IMAP/POP port:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="5" FontSize="14" VerticalContentAlignment="Center"/>
+				<Label HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="6" FontSize="14" BorderThickness="0" VerticalContentAlignment="Center">
+					<TextBlock TextWrapping="WrapWithOverflow">
+                        Server name of Outcome <LineBreak/>messages:
+					</TextBlock>
+				</Label>
+				<Label Content="SMTP port:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="7" FontSize="14" VerticalContentAlignment="Center"/>
+				<Label HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="8" FontSize="14" VerticalContentAlignment="Center">
+					<TextBlock TextWrapping="WrapWithOverflow">
+                        Secure connection with server params:
+					</TextBlock>
+				</Label>
+				<Label Content="Use name and password:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="200" Grid.Column="0" Grid.Row="9" FontSize="14"/>
+				<Label HorizontalAlignment="Left" Height="50" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" Grid.Column="0" Grid.Row="10" FontSize="14">
+					<TextBlock TextWrapping="WrapWithOverflow" VerticalAlignment="Center">
+                        Use secure authentication:
+					</TextBlock>
+				</Label>
+
+				<TextBox x:Name="EMailUserNameTextBox" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left" Width="340" Grid.Row="1" Grid.ColumnSpan="4" BorderThickness="3" FontSize="14"/>
+				<TextBox x:Name="EMailAddressTextBox" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="2" Grid.ColumnSpan="4" BorderThickness="3"/>
+				<PasswordBox x:Name="EMailPasswordPasswordBox" Grid.Column="2" HorizontalAlignment="Left" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="340" Grid.Row="3" Grid.ColumnSpan="4" BorderThickness="3"/>
+				<TextBox x:Name="EMailPasswordTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="340" Grid.Row="3" Grid.ColumnSpan="4" BorderThickness="3" Visibility="Collapsed"/>
+				<TextBox x:Name="ServerNameOfIncomeMessageTextBox" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="4" Grid.ColumnSpan="4" BorderThickness="3"/>
+				<TextBox x:Name="IncomeMessagesPortTextBox" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="140" Grid.Row="5" Grid.ColumnSpan="2" BorderThickness="3"/>
+				<TextBox x:Name="ServerNameOfOutcomeMessageTextBox" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="6" Grid.ColumnSpan="4" BorderThickness="3"/>
+				<TextBox x:Name="OutcomeMessagesPortTextBox" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="140" Grid.Row="7" Grid.ColumnSpan="2" BorderThickness="3"/>
+				<ListView x:Name="SecureConnectionOnServerListView" Grid.Column="2" BorderThickness="3" BorderBrush="DarkGray" HorizontalAlignment="Left" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center"  Width="140" Grid.Row="8" Grid.ColumnSpan="3" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontSize="20" DisplayMemberPath="Description" SelectedValuePath="Value" SelectionChanged="SecureConnectionOnServer_ListView_SelectionChanged" SelectionMode="Single" SelectedItem="Value"/>
+				<TextBox x:Name="UserNameOnServerTextBox" Grid.Column="3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="290" Grid.Row="9" Grid.ColumnSpan="3" BorderThickness="3"/>
+
+				<CheckBox x:Name="UseNameAndPasswordCheckBox" Grid.Column="2" Grid.Row="9" Height="40" VerticalAlignment="Center" Checked="UseNameAndPassword_CheckBox_Checked" HorizontalAlignment="Center" Width="40" Unchecked="UseNameAndPassword_CheckBox_Unchecked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+				<CheckBox x:Name="UseSecureAuthenticationCheckBox" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="10" VerticalAlignment="Center" Width="40" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+				<Button x:Name="ShowEmailPasswordButton" Grid.Column="6" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="45" Height="45" Background="Transparent" BorderThickness="0" Click="ShowEmailPassword_Button_Click">
+					<StackPanel>
+						<Image x:Name="ShowEmailImageLogoImage">
+							<Image.Source>
+								<BitmapImage UriSource="..\AppData\Images\ClosedEyesImage.png"/>
+							</Image.Source>
+						</Image>
+					</StackPanel>
+				</Button>
+
+				<Label Content="EMail Local Folders" HorizontalAlignment="Left" Height="50" VerticalAlignment="Center" Width="620" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="7" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" Grid.Column="8" Grid.Row="9" FontSize="14" VerticalContentAlignment="Center">
+					<TextBlock TextWrapping="WrapWithOverflow">
+                        Mozilla Thunderbird Inbox Local Folder:
+					</TextBlock>
+				</Label>
+				<Label HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" VerticalContentAlignment="Center" Grid.Column="8" Grid.Row="10" FontSize="14">
+					<TextBlock TextWrapping="WrapWithOverflow">
+                        Mozilla Thunderbird FTC Local Folder:
+					</TextBlock>
+				</Label>
+				<Label HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" VerticalContentAlignment="Center" Grid.Column="8" Grid.Row="11" FontSize="14">
+					<TextBlock TextWrapping="WrapWithOverflow">
+						Mozilla Thunderbird FTC Completed Local Folder:
+					</TextBlock>
+				</Label>
+				<TextBox x:Name="MozillaThunderbirdInboxLocalFolderTextBox" Grid.Column="10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="9" Grid.ColumnSpan="4" BorderThickness="3"/>
+				<TextBox x:Name="MozillaThunderbirdFtcMessagesLocalFolderTextBox" Grid.Column="10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="10" Grid.ColumnSpan="4" BorderThickness="3"/>
+				<TextBox x:Name="MozillaThunderbirdFtcCompletedMessagesLocalFolderTextBox" Grid.Column="10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="11" Grid.ColumnSpan="4" BorderThickness="3"/>
+
+				<Button x:Name="OpenInboxFolderButton" Grid.Column="14" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center" Width="45" Height="45" Background="Transparent" BorderThickness="0" Click="OpenInboxFolder_Button_Click">
+					<StackPanel>
+						<Image>
+							<Image.Source>
+								<BitmapImage UriSource="..\AppData\Images\OpenFolderImage.png"/>
+							</Image.Source>
+						</Image>
+					</StackPanel>
+				</Button>
+				<Button x:Name="OpenFtcFolderFolderButton" Grid.Column="14" HorizontalAlignment="Center" Grid.Row="10" 
+						VerticalAlignment="Center" Width="45" Height="45" Background="Transparent" BorderThickness="0" Click="OpenFtcFolderFolder_Button_OnClick">
+					<StackPanel>
+						<Image>
+							<Image.Source>
+								<BitmapImage UriSource="..\AppData\Images\OpenFolderImage.png"/>
+							</Image.Source>
+						</Image>
+					</StackPanel>
+				</Button>
+				<Button x:Name="OpenFtcCompletedFolderFolderButton" Grid.Column="14" HorizontalAlignment="Center" Grid.Row="11" VerticalAlignment="Center" Width="45" Height="45" 
+						Background="Transparent" BorderThickness="0" Click="OpenFtcCompletedFolderFolder_Button_OnClick">
+					<StackPanel>
+						<Image>
+							<Image.Source>
+								<BitmapImage UriSource="..\AppData\Images\OpenFolderImage.png"/>
+							</Image.Source>
+						</Image>
+					</StackPanel>
+				</Button>
+
+				<Label Content="Database configuration" HorizontalAlignment="Left" Height="50" VerticalAlignment="Center" Width="620" Grid.Row="0" Grid.Column="8" Grid.ColumnSpan="7" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="DB Data Source:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" Grid.Column="8" Grid.Row="1" FontSize="14" VerticalContentAlignment="Center"/>
+                <Label Content="DB File Path:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" Grid.Column="8" Grid.Row="2" FontSize="14" VerticalContentAlignment="Center"/>
+                <Label Content="DB Password:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" Grid.Column="8" Grid.Row="3" FontSize="14" VerticalContentAlignment="Center"/>
+                <Label Content="DB User:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" Grid.Column="8" Grid.Row="4" FontSize="14" VerticalContentAlignment="Center"/>
+                <Label Content="DB Initial Catalog:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" Grid.Column="8" Grid.Row="5" FontSize="14" VerticalContentAlignment="Center"/>
+				<Label Content="DB Integrated Security:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" Grid.Column="8" Grid.Row="6" FontSize="14" VerticalContentAlignment="Center"/>
+				<TextBox x:Name="DatabaseDataSourceTextBox" Grid.Column="10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="1" Grid.ColumnSpan="4" BorderThickness="3"/>
+                <TextBox x:Name="DatabaseFileInLocalFolderTextBox" Grid.Column="10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="2" Grid.ColumnSpan="4" BorderThickness="3"/>
+                <TextBox x:Name="DatabaseUserNameTextBox" Grid.Column="10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="4" Grid.ColumnSpan="4" BorderThickness="3"/>
+                <TextBox x:Name="DatabaseInitialCatalogTextBox" Grid.Column="10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Left"  Width="340" Grid.Row="5" Grid.ColumnSpan="4" BorderThickness="3"/>
+                <PasswordBox x:Name="DatabasePasswordPasswordBox" Grid.Column="10" HorizontalAlignment="Left"  Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="340" Grid.Row="3" Grid.ColumnSpan="4" BorderThickness="3"/>
+                <TextBox x:Name="DatabasePasswordTextBox" Grid.Column="10" HorizontalAlignment="Left"  Height="45" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="340" Grid.Row="2" Grid.ColumnSpan="4" BorderThickness="3" Visibility="Collapsed"/>
+
+                <Button x:Name="OpenDatabaseFolderButton" Grid.Column="14" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="45" Height="45" Background="Transparent" BorderThickness="0" Click="OpenDatabaseFolder_Button_Click">
+                    <StackPanel>
+                        <Image>
+                            <Image.Source>
+                                <BitmapImage UriSource="..\AppData\Images\OpenFolderImage.png"/>
+                            </Image.Source>
+                        </Image>
+                    </StackPanel>
+                </Button>
+                
+              <CheckBox x:Name="DatabaseIntegratedSecurityCheckBox" Grid.Column="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Width="45" Height="45"/>
+                <Button x:Name="ShowDatabasePasswordButton" Grid.Column="14" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="45" Height="45" Background="Transparent" BorderThickness="0" Click="ShowDatabasePassword_Button_Click">
+                    <StackPanel>
+                        <Image x:Name="ShowDatabaseImageLogoImage">
+                            <Image.Source>
+                                <BitmapImage UriSource="..\AppData\Images\ClosedEyesImage.png"/>
+                            </Image.Source>
+                        </Image>
+                    </StackPanel>
+                </Button>
+                <Button Content="TEST CONNECTION" Grid.Column="10" 
+						HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Center" Width="140" Grid.ColumnSpan="3" 
+						Height="40" FontSize="13" FontWeight="Bold" Background="Transparent" 
+						BorderThickness="3" Click="TestDatabaseConnection_Button_Click"/>
+				<Button Content="Add Mail Filter" Grid.Column="10" 
+				        HorizontalAlignment="Left" Grid.Row="12" VerticalAlignment="Center" Width="140" Grid.ColumnSpan="3" 
+				        Height="40" FontSize="13" FontWeight="Bold" Background="Transparent" 
+				        BorderThickness="3" Click="AddMailFilter_Button_OnClick"/>
+            <!--   <Button x:Name="TestFileAccess_Button" Content="TEST FILE ACCESS" Grid.Column="10" HorizontalAlignment="Left" Grid.Row="8" VerticalAlignment="Center" Width="130" Grid.ColumnSpan="3" Height="40" FontSize="13" FontWeight="Bold" Background="Transparent" BorderThickness="3" Click="TestFileAccess_Button_Click"/>
+            -->
+			</Grid>
+		</StackPanel>
+	</Grid>
+</Page>
